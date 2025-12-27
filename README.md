@@ -4,7 +4,17 @@ This project presents a **comparative study of video denoising techniques**, ran
 The objective is to evaluate how traditional filters perform compared to a pretrained transformer-based model, **Restormer**, when applied to noisy video data.
 Rather than proposing a new model, this project focuses on **experimental design, controlled evaluation, and qualitative analysis** using real video input.
 
-# Repo Structure
+# Pipeline Overview
+1. Input clean video
+2. Extract frames
+3. Inject Gaussian noise
+4. Apply classical denoising methods
+5. Apply Restormer denoising
+6. Align frames across methods
+7. Reconstruct comparison video
+8. Perform qualitative and quantitative evaluation
+
+# Repository Structure
 - demo.ipynb: main notebook
 - (future) scripts/: helper scripts
 - (future) results/: evaluation outputs (ignored in git)
