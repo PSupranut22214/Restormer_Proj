@@ -15,8 +15,8 @@ Rather than proposing a new model, this project focuses on **experimental design
 8. Perform qualitative and quantitative evaluation
 
 # References 
-- Zamir, S. W., et al., *Restormer: Efficient Transformer for High-Resolution Image Restoration*, CVPR 2022.
-- Restormer Official GitHub Repository: https://github.com/swz30/Restormer
+  Restormer model and pretrained weights were obtained from the official GitHub repository:
+  https://github.com/swz30/Restormer
   - The Restormer source code and the pretrained denoising weights
     (`gaussian_color_denoising_blind.pth`) were downloaded from the official GitHub repository
     released by the original authors. The pretrained model was used strictly for inference
