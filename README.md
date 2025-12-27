@@ -10,20 +10,55 @@ Rather than proposing a new model, this project focuses on **experimental design
 - (future) results/: evaluation outputs (ignored in git)
 
 ## Methods
+
+This project compares **classical image processing techniques** with a **deep learning–based restoration model** under a controlled video denoising pipeline. All methods are applied to the same noisy video frames to ensure a fair and consistent comparison.
+
+
 ### Classical Image Processing
+
+Classical denoising methods are used as baseline approaches due to their simplicity,
+interpretability, and widespread adoption in traditional image processing.
+
 - **Gaussian Blur**
-  - Smooths noise via convolution
-  - Effective for noise reduction but blurs edges and textures
+  - Smooths noise via convolution with a Gaussian kernel
+  - Effective for reducing Gaussian noise but causes edge and texture blurring
+  - **Strengths:** Simple, fast, computationally efficient  
+  - **Limitations:** Loss of fine details and edge sharpness
 
 - **Median Blur**
-  - Replaces pixel values with neighborhood medians
-  - Preserves edges better than Gaussian blur but still removes fine details
+  - Replaces pixel values with the median of neighboring pixels
+  - Preserves edges better than Gaussian blur
+  - **Strengths:** Robust to impulse noise and outliers  
+  - **Limitations:** Removes fine textures and small details
+
 
 ### Deep Learning Approach
+
 - **Restormer**
   - Transformer-based image restoration model
-  - Captures long-range dependencies and global context
-  - Preserves structure and textures while suppressing noise
+  - Captures long-range dependencies and global contextual information
+  - Effectively suppresses noise while preserving structural details and textures
+  - Used with **pretrained weights** and applied **only in inference mode**
+  - **Strengths:** High perceptual quality and strong texture preservation  
+  - **Limitations:** Requires pretrained models and higher computational resources
+
+
+### Implementation Details
+
+- Video frames are processed on a frame-by-frame basis.
+- Gaussian noise is synthetically added to simulate realistic degradation.
+- Classical filters use fixed parameters across all frames.
+- Restormer is applied using pretrained weights without training or fine-tuning.
+- All outputs are aligned by frame index to ensure fair visual comparison.
+
+
+### Method Comparison Rationale
+
+Classical image processing methods rely on fixed mathematical rules and local
+operations, whereas Restormer adopts a data-driven approach that learns complex
+spatial and contextual relationships from data. This contrast enables a clear
+comparison between rule-based and deep learning–based denoising techniques.
+
 
 ## Evaluation Metrics
 - **SSIM (Structural Similarity Index)**
