@@ -14,11 +14,13 @@ Rather than proposing a new model, this project focuses on **experimental design
 7. Reconstruct comparison video
 8. Perform qualitative and quantitative evaluation
 
-# Repository Structure
-- demo.ipynb: main notebook
-- (future) scripts/: helper scripts
-- (future) results/: evaluation outputs (ignored in git)
-
+# References 
+- Zamir, S. W., et al., *Restormer: Efficient Transformer for High-Resolution Image Restoration*, CVPR 2022.
+- Restormer Official GitHub Repository: https://github.com/swz30/Restormer
+  - The Restormer source code and the pretrained denoising weights
+    (`gaussian_color_denoising_blind.pth`) were downloaded from the official GitHub repository
+    released by the original authors. The pretrained model was used strictly for inference
+    without any training or fine-tuning.
 # Methods
 This project compares **classical image processing techniques** with a **deep learning–based restoration model** under a controlled video denoising pipeline. All methods are applied to the same noisy video frames to ensure a fair and consistent comparison.
 
