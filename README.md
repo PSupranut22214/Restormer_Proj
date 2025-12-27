@@ -1,7 +1,9 @@
 # Restormer Project
 
-This project demonstrates image and video denoising using classical filters
-(Gaussian, Median) and the Restormer deep learning model in Google Colab.
+This project presents a **comparative study of video denoising techniques**, ranging from classical image processing methods to a modern deep learning–based approach. 
+The objective is to evaluate how traditional filters perform compared to a pretrained transformer-based model, **Restormer**, when applied to noisy video data.
+
+Rather than proposing a new model, this project focuses on **experimental design, controlled evaluation, and qualitative analysis** using real video input.
 
 ## Repo Structure
 - demo.ipynb: main notebook
