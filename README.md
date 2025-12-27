@@ -33,5 +33,9 @@ Rather than proposing a new model, this project focuses on **experimental design
 - **PSNR (Peak Signal-to-Noise Ratio)**
   - Evaluates perceptual image quality by comparing luminance, contrast, and structural
     information. SSIM aligns better with human visual perception than PSNR.
+    
+- Both metrics are reported to provide complementary perspectives: PSNR focuses on
+  pixel-wise fidelity, while SSIM emphasizes structural and perceptual similarity.
+
 
 ## Evaluate & Result 
