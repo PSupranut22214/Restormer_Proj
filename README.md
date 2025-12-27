@@ -10,12 +10,9 @@ Rather than proposing a new model, this project focuses on **experimental design
 - (future) results/: evaluation outputs (ignored in git)
 
 # Methods
-
 This project compares **classical image processing techniques** with a **deep learning–based restoration model** under a controlled video denoising pipeline. All methods are applied to the same noisy video frames to ensure a fair and consistent comparison.
 
-
 ### Classical Image Processing
-
 Classical denoising methods are used as baseline approaches due to their simplicity,
 interpretability, and widespread adoption in traditional image processing.
 
@@ -33,7 +30,6 @@ interpretability, and widespread adoption in traditional image processing.
 
 
 ### Deep Learning Approach
-
 - **Restormer**
   - Transformer-based image restoration model
   - Captures long-range dependencies and global contextual information
@@ -44,7 +40,6 @@ interpretability, and widespread adoption in traditional image processing.
 
 
 ### Implementation Details
-
 - Video frames are processed on a frame-by-frame basis.
 - Gaussian noise is synthetically added to simulate realistic degradation.
 - Classical filters use fixed parameters across all frames.
@@ -53,7 +48,6 @@ interpretability, and widespread adoption in traditional image processing.
 
 
 ### Method Comparison Rationale
-
 Classical image processing methods rely on fixed mathematical rules and local
 operations, whereas Restormer adopts a data-driven approach that learns complex
 spatial and contextual relationships from data. This contrast enables a clear
