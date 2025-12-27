@@ -67,16 +67,19 @@ comparison between rule-based and deep learning–based denoising techniques.
 
 
 # Evaluation Metrics
-- **SSIM (Structural Similarity Index)**
-  - Measures the ratio between the maximum possible signal power and the noise power.
-    Higher PSNR indicates better noise suppression but does not always correlate with
-    human visual perception.
 - **PSNR (Peak Signal-to-Noise Ratio)**
+  - Measures the ratio between the maximum possible signal power and the noise power.
+  - Higher PSNR indicates better noise suppression but does not always correlate with
+    human visual perception.
+
+- **SSIM (Structural Similarity Index)**
   - Evaluates perceptual image quality by comparing luminance, contrast, and structural
-    information. SSIM aligns better with human visual perception than PSNR.
-    
-- Both metrics are reported to provide complementary perspectives: PSNR focuses on
-  pixel-wise fidelity, while SSIM emphasizes structural and perceptual similarity.
+    information.
+  - SSIM aligns better with human visual perception than PSNR.
+
+Both metrics are reported to provide complementary perspectives: PSNR focuses on
+pixel-wise fidelity, while SSIM emphasizes structural and perceptual similarity.
+
 
 
 # Evaluate & Result 
