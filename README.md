@@ -4,12 +4,12 @@ This project presents a **comparative study of video denoising techniques**, ran
 The objective is to evaluate how traditional filters perform compared to a pretrained transformer-based model, **Restormer**, when applied to noisy video data.
 Rather than proposing a new model, this project focuses on **experimental design, controlled evaluation, and qualitative analysis** using real video input.
 
-## Repo Structure
+# Repo Structure
 - demo.ipynb: main notebook
 - (future) scripts/: helper scripts
 - (future) results/: evaluation outputs (ignored in git)
 
-## Methods
+# Methods
 
 This project compares **classical image processing techniques** with a **deep learning–based restoration model** under a controlled video denoising pipeline. All methods are applied to the same noisy video frames to ensure a fair and consistent comparison.
 
@@ -60,7 +60,7 @@ spatial and contextual relationships from data. This contrast enables a clear
 comparison between rule-based and deep learning–based denoising techniques.
 
 
-## Evaluation Metrics
+# Evaluation Metrics
 - **SSIM (Structural Similarity Index)**
   - Measures the ratio between the maximum possible signal power and the noise power.
     Higher PSNR indicates better noise suppression but does not always correlate with
@@ -73,4 +73,4 @@ comparison between rule-based and deep learning–based denoising techniques.
   pixel-wise fidelity, while SSIM emphasizes structural and perceptual similarity.
 
 
-## Evaluate & Result 
+# Evaluate & Result 
