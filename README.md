@@ -82,4 +82,4 @@ pixel-wise fidelity, while SSIM emphasizes structural and perceptual similarity.
 
 
 
-# Evaluate & Result 
+# Results 
