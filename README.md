@@ -26,7 +26,12 @@ Rather than proposing a new model, this project focuses on **experimental design
   - Preserves structure and textures while suppressing noise
 
 ## Evaluation Metrics
-- **SSIM (Peak Signal-to-Noise Ratio)**
-- **PSNR (Structural Similarity Index)**
+- **SSIM (Structural Similarity Index)**
+  Measures the ratio between the maximum possible signal power and the noise power.
+  Higher PSNR indicates better noise suppression but does not always correlate with
+  human visual perception.
+- **PSNR (Peak Signal-to-Noise Ratio)**
+  Evaluates perceptual image quality by comparing luminance, contrast, and structural
+  information. SSIM aligns better with human visual perception than PSNR.
 
 ## Evaluate & Result 
