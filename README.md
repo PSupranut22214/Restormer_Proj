@@ -25,8 +25,8 @@ Rather than proposing a new model, this project focuses on **experimental design
   - Captures long-range dependencies and global context
   - Preserves structure and textures while suppressing noise
 
-## Metrics
-- SSIM
-- PSNR
+## Evaluation Metrics
+- **SSIM (Peak Signal-to-Noise Ratio)**
+- **PSNR (Structural Similarity Index)**
 
 ## Evaluate & Result 
