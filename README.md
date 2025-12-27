@@ -28,3 +28,5 @@ Rather than proposing a new model, this project focuses on **experimental design
 ## Metrics
 - SSIM
 - PSNR
+
+## Evaluate & Result 
